@@ -1,0 +1,16 @@
+https://www.python.org/downloads/
+
+https://docs.python.org/3.9/tutorial/index.html
+
+
+
+
+
+python-3.9.1-macosx10.9.pkg  ====>mac上我们直接安装  /usr/local/bin/python3.9     python3.9
+安装之后，会自动做好软链的，python3就是python3.9
+
+注意：mac系统默认会安装python2，
+           我的这台mac由于brew install graphviz自动安装了 /usr/local/Cellar/python/3.7.6_1
+           brew install  pssh自动安装了/usr/local/Cellar/python@3.8/3.8.1
+
+上还自动用brew安装了python，是因为brew安装了一些工具依赖于它了，我们要区分好。
