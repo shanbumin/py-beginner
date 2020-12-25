@@ -1,0 +1,12 @@
+os.path模块封装了操作路径的工具函数，如果程序中需要对文件路径做拼接、拆分、获取以及获取文件的存在性和其他属性，这个模块将会非常有帮助，下面为大家罗列一些常用的函数。
+
+dirname(path)：返回路径path的目录名称。
+exists(path)：如果path指向一个已存在的路径或已打开的文件描述符，返回 True。
+getatime(path) / getmtime(path) / getctime(path)：返回path的最后访问时间/最后修改时间/创建时间。
+getsize(path)：返回path的大小，以字节为单位。如果该文件不存在或不可访问，则抛出OSError异常。
+isfile(path)：如果path是普通文件，则返回 True。
+isdir(path)：如果path是目录（文件夹），则返回True。
+join(path, *paths)：合理地拼接一个或多个路径部分。返回值是path和paths所有值的连接，每个非空部分后面都紧跟一个目录分隔符 (os.sep)，除了最后一部分。
+                   这意味着如果最后一部分为空，则结果将以分隔符结尾。如果参数中某个部分是绝对路径，则绝对路径前的路径都将被丢弃，并从绝对路径部分开始连接。
+splitext(path)：将路径path拆分为一对，即(root, ext)，使得root + ext == path，其中ext为空或以英文句点开头，且最多包含一个句点。
+

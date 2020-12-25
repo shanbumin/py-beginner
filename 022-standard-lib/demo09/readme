@@ -1,0 +1,16 @@
+#random - 随机数和随机抽样模块
+#这个模块我们之前已经用过很多次了，生成随机数、实现随机乱序和随机抽样，下面是常用函数的列表。
+
+getrandbits(k)：返回具有k个随机比特位的整数。
+randrange(start, stop[, step])：从range(start, stop, step) 返回一个随机选择的元素，但实际上并没有构建一个range对象。
+randint(a, b)：返回随机整数N满足a <= N <= b，相当于randrange(a, b+1)。
+choice(seq)：从非空序列seq返回一个随机元素。 如果seq为空，则引发IndexError。
+choices(population, weight=None, *, cum_weights=None, k=1)：从population中选择替换，返回大小为k的元素列表。 如果population为空，则引发IndexError。
+shuffle(x[, random])：将序列x随机打乱位置。
+sample(population, k)：返回从总体序列或集合中选择k个不重复元素构造的列表，用于无重复的随机抽样。
+random()：返回[0.0, 1.0)范围内的下一个随机浮点数。
+expovariate(lambd)：指数分布。
+gammavariate(alpha, beta)：伽玛分布。
+gauss(mu, sigma) / normalvariate(mu, sigma)：正态分布。
+paretovariate(alpha)：帕累托分布。
+weibullvariate(alpha, beta)：威布尔分布。
