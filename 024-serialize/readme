@@ -1,0 +1,39 @@
+果希望把一个列表或者一个字典中的数据保存到文件中又该怎么做呢？
+
+[
+  {},
+  {},
+  {},
+]
+-------
+{
+  "k1":v1,
+  "k2":v2
+}
+
+
+JSON格式的数据类型和Python中的数据类型也是很容易找到对应关系的，正如下面的两张表所示。
+
+
+JSON	Python
+object	dict
+array	list
+string	str
+number (int / real)	int / float
+true / false	True / False
+null	None
+---
+Python	JSON
+dict	object
+list, tuple	array
+str	string
+int, float, int- & float-derived Enums	number
+True / False	true / false
+None	null
+
+-------------------------------------
+Python中实现序列化和反序列化除了使用json模块之外，还可以使用pickle和shelve模块，但是这两个模块是使用特有的序列化协议来序列化数据，
+因此序列化后的数据只能被Python识别，关于这两个模块的相关知识可以自己看看网络上的资料。
+处理JSON格式的数据很显然是程序员必须掌握的一项技能，因为不管是访问网络API接口还是提供网络API接口给他人使用，都需要具备处理JSON格式数据的相关知识。
+
+

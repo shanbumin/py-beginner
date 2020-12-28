@@ -1,0 +1,11 @@
+Python标准库中的json模块在数据序列化和反序列化时性能并不是非常理想，为了解决这个问题，可以使用三方库ujson来替换json。
+
+
+之前安装Python解释器时，默认情况下已经勾选了安装pip，大家可以在命令提示符或终端中通过pip --version来确定是否已经拥有了pip。pip是Python的包管理工具，通过pip可以查找、安装、卸载、更新Python的三方库或工具，macOS和Linux系统应该使用pip3。例如要安装替代json模块的ujson，可以使用下面的命令。
+
+pip install ujson
+在默认情况下，pip会访问https://pypi.org/simple/来获得三方库相关的数据，但是国内访问这个网站的速度并不是十分理想，因此国内用户可以使用豆瓣网提供的镜像来替代这个默认的下载源，操作如下所示。
+
+pip install ujson -i https://pypi.doubanio.com/simple
+
+
