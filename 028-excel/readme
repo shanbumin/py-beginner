@@ -1,0 +1,18 @@
+Python操作Excel需要三方库的支持，如果要兼容Excel 2007以前的版本，也就是xls格式的Excel文件，可以使用三方库xlrd和xlwt，前者用于读Excel文件，后者用于写Excel文件。
+如果使用较新版本的Excel，即操作xlsx格式的Excel文件，也可以使用openpyxl库，当然这个库不仅仅可以操作Excel，还可以操作其他基于Office Open XML的电子表格文件。
+
+下面我们以xlwt和xlrd为例讲解如何读写Excel文件，大家可以先使用下面的命令安装这两个三方库文件。
+
+pip3 install xlwt xlrd
+
+
+
+
+
+
+https://www.cnblogs.com/plus666/p/13742616.html  [python操作excel库对比]
+https://baijiahao.baidu.com/s?id=1632485393357161183&wfr=spider&for=pc [Python3有好多操作excel的第3方库，究竟该选哪个？]
+工作簿:workbook
+工作表:sheet
+单元格:cell
+
