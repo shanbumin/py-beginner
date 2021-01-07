@@ -1,0 +1,5 @@
+要使用Python获取网络数据，我们可以先安装一个名为requests 的三方库。
+按照官方网站的解释，requests是基于Python标准库进行了封装，简化了通过HTTP访问网络资源的操作。
+
+https://requests.readthedocs.io/zh_CN/latest/
+
