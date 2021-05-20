@@ -1,16 +1,64 @@
-https://www.python.org/downloads/
+一、检查python环境
+1.如果已经存在python3就不需要安装了.注意：mac系统默认会安装python2。新版系统Xcode上已经装有python3了。
+2.下载地址：https://www.python.org/downloads/
+     python-3.9.1-macosx10.9.pkg  ====>mac上我们直接安装  /usr/local/bin/python3.9     python3.9
+     安装之后，会自动做好软链的，python3就是python3.9
+3.可以用brew安装python的额，看自己喜好吧。
 
-https://docs.python.org/3.9/tutorial/index.html
+
+4.官方练习手册：https://docs.python.org/3.9/tutorial/index.html
+
+
+二、pip安装与使用
+
+1.说明
+https://www.runoob.com/w3cnote/python-pip-install-usage.html
+https://pypi.org/project/pip/  
+
+2.常用命令
+2020.12.19 最新版  pip 20.3.3
+pip3 --help
+pip3 --version
+pip3 install -U pip   # 升级到最新版本
+pip3 search  ujson #目前报错哎，可以去web站点搜索   https://pypi.org/search/?q=ujson
+pip3 install ujson
+pip3 install --upgrade  ujson
+pip3 show ujson
+pip3 show -f ujson
+pip3 list
+pip3 list -o  #查看可升级的包
+pip3 uninstall ujson
+
+3.国内源
+
+
+pip 清华大学开源软件镜像站
+使用国内镜像速度会快很多：
+临时使用：
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple some-package
+例如，安装 Django：
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple Django
+如果要设为默认需要升级 pip 到最新的版本 (>=10.0.0) 后进行配置：
+pip install pip -U
+pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
+如果您到 pip 默认源的网络连接较差，临时使用本镜像站来升级 pip：
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple pip -U
+
+pip3 config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
+Writing to /Users/sam/.config/pip/pip.conf
+
+pip源有以下
+新版ubuntu要求使用https源，要注意。
+清华：https://pypi.tuna.tsinghua.edu.cn/simple
+阿里云：http://mirrors.aliyun.com/pypi/simple/
+中国科技大学 https://pypi.mirrors.ustc.edu.cn/simple/
+华中理工大学：http://pypi.hustunique.com/
+山东理工大学：http://pypi.sdutlinux.org/
+豆瓣：http://pypi.douban.com/simple/
 
 
 
 
 
-python-3.9.1-macosx10.9.pkg  ====>mac上我们直接安装  /usr/local/bin/python3.9     python3.9
-安装之后，会自动做好软链的，python3就是python3.9
 
-注意：mac系统默认会安装python2，
-           我的这台mac由于brew install graphviz自动安装了 /usr/local/Cellar/python/3.7.6_1
-           brew install  pssh自动安装了/usr/local/Cellar/python@3.8/3.8.1
 
-上还自动用brew安装了python，是因为brew安装了一些工具依赖于它了，我们要区分好。
