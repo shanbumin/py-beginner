@@ -3,7 +3,7 @@
 2.下载地址：https://www.python.org/downloads/
      python-3.9.1-macosx10.9.pkg  ====>mac上我们直接安装  /usr/local/bin/python3.9     python3.9
      安装之后，会自动做好软链的，python3就是python3.9
-3.可以用brew安装python的额，看自己喜好吧。
+3.可以用brew安装python的额，看自己喜好吧。brew install python@3.9
 
 
 4.官方练习手册：https://docs.python.org/3.9/tutorial/index.html
