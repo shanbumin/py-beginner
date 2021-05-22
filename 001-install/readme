@@ -61,6 +61,8 @@ pip源有以下
 
 https://www.jetbrains.com/pycharm/download/#section=mac
 
+左边：可以免费试用30天，适用于科学和Web Python开发。具有HTML，JS和SQL支持。
+右边: 社区免费开源的,纯Python开发 pycharm-community-2021.1.1.dmg
 
 New environment  using    Virtualenv | Pipeenv |Conda
 
